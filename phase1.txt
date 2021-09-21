@@ -68,7 +68,7 @@ Dump of assembler code for function phase_1:
    0x0000000000400ea8 <+27>:    retq
 End of assembler dump.
 
-(gdb) i r
+(gdb) i r //information register
 rax            0x1                 1
 rbx            0x4021f0            4202992
 rcx            0x2                 2
