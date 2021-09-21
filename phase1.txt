@@ -61,7 +61,7 @@ Dump of assembler code for function phase_1:
    0x0000000000400e8d <+0>:     sub    $0x8,%rsp
    0x0000000000400e91 <+4>:     mov    $0x4023cc,%esi
    0x0000000000400e96 <+9>:     callq  0x401339 <strings_not_equal>
-=> 0x0000000000400e9b <+14>:    test   %eax,%eax
+=> 0x0000000000400e9b <+14>:    test   %eax,%eax // compares user input and system
    0x0000000000400e9d <+16>:    je     0x400ea4 <phase_1+23>
    0x0000000000400e9f <+18>:    callq  0x401438 <explode_bomb>
    0x0000000000400ea4 <+23>:    add    $0x8,%rsp
@@ -115,7 +115,7 @@ Dump of assembler code for function phase_1:
    0x0000000000400e96 <+9>:     callq  0x401339 <strings_not_equal>
    0x0000000000400e9b <+14>:    test   %eax,%eax
    0x0000000000400e9d <+16>:    je     0x400ea4 <phase_1+23>
-=> 0x0000000000400e9f <+18>:    callq  0x401438 <explode_bomb>
+=> 0x0000000000400e9f <+18>:    callq  0x401438 <explode_bomb> // since user input does not match with system input which has been jump to callq  0x401438 <explode_bomb>
    0x0000000000400ea4 <+23>:    add    $0x8,%rsp
    0x0000000000400ea8 <+27>:    retq
 End of assembler dump.
